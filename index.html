@@ -31,23 +31,15 @@
 <body>
     <img src="1.png" id="main-product">
     <div class="container">
-        <img src="1.png" class="product-image" onclick="changeImage(1)">
-        <img src="2.png" class="product-image" onclick="changeImage(2)">
-        <img src="4.png" class="product-image" onclick="changeImage(4)">
-        <img src="5.png" class="product-image" onclick="changeImage(5)">
+        <img src="1.png" class="product-image" onclick="changeImage('1.png')">
+        <img src="2.png" class="product-image" onclick="changeImage('2.png')">
+        <img src="4.png" class="product-image" onclick="changeImage('4.png')">
+        <img src="5.png" class="product-image" onclick="changeImage('5.png')">
     </div>
     <script>
         function changeImage(num){
             const mainImage=document.getElementById('main-product');
-            if(num==1){
-                mainImage.src="1.png";
-            }else if(num==2){
-                mainImage.src="2.png";
-            }else if(num==4){
-                mainImage.src="4.png";
-            }else if(num==5){
-                mainImage.src="5.png"
-            }
+                mainImage.src=num;
         }
     </script>
 </body>
